@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  padding: 20px 18px;
+  color: #6880a0;
+  align-items: center;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  padding: 0.5em 1em;
+}
+
+.navbar-items-right {
+  margin-left: auto;
+}
+
+.navbar-link-toggle {
+  display: none;
+}
+
+.navbar-logo {
+  max-width: 200px;
+}
+
+/* link styling  */
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.discord-link {
+  padding: 0.4em 0.9em;
+  border: 3px black solid;
+  border-radius: 0.7em;
+  transition: all 0.4s;
+}
+
+.discord-link:hover {
+  background: black;
+  color: white;
+}
+
+/* HERO STYLES  */
+
+.hero {
+  display: flex;
+}
+
+.app-image {
+  max-height: 650px;
+}
+
+.hero-left {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.hero-right {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-store-badge {
+  max-width: 150px;
+  margin-top: 10px;
+}
+
+/* FOOTER  */
+
+footer {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* GENERAL STYLES  */
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.spacer {
+  width: 100%;
+  height: 100px;
+}
+
+.pad {
+    padding: 0 100px;
+}
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width: 875px) {
+  .pad {
+    padding: 30px;
+  }
+
+  .spacer {
+      height: 60px;
+  }
+
+  .hero {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .hero-left {
+      text-align: center;
+      padding-bottom: 30px;
+  }
+}

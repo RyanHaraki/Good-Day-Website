@@ -1,0 +1,15 @@
+/* Arvo - Header Font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
+/* Inter - Body Font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Inter:wght@400;500&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-family: 'Arvo', serif;
+}
