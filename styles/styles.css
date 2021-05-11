@@ -82,11 +82,11 @@ body {
 /* FOOTER  */
 
 footer {
-    background: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 /* GENERAL STYLES  */
@@ -106,7 +106,7 @@ p {
 }
 
 .pad {
-    padding: 0 100px;
+  padding: 0 100px;
 }
 
 /* MEDIA QUERIES  */
@@ -116,8 +116,12 @@ p {
     padding: 30px;
   }
 
+  .navbar-logo {
+    max-width: 120px;
+  }
+
   .spacer {
-      height: 60px;
+    height: 60px;
   }
 
   .hero {
@@ -126,7 +130,7 @@ p {
   }
 
   .hero-left {
-      text-align: center;
-      padding-bottom: 30px;
+    text-align: center;
+    padding-bottom: 30px;
   }
 }
