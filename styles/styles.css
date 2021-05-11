@@ -79,6 +79,40 @@ body {
   margin-top: 10px;
 }
 
+/* Hero input styles */
+
+#inputbox {
+  display: flex;
+  border: 4px solid #000000;
+  border-radius: 8px;
+  height: 45px;
+  width: 95%;
+margin-top: 20px;
+}
+
+#search {
+  flex: 0.7;
+  border: none;
+  padding: 1em;
+  font-size: 1rem;
+}
+
+#submit {
+  flex: 0.3;
+  width: 100%;
+  background: black;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#submit:active {
+  background: rgb(31, 31, 31);
+
+}
+
 /* FOOTER  */
 
 footer {
@@ -109,6 +143,10 @@ p {
   padding: 0 100px;
 }
 
+.center-small {
+
+}
+
 /* MEDIA QUERIES  */
 
 @media screen and (max-width: 875px) {
@@ -132,5 +170,11 @@ p {
   .hero-left {
     text-align: center;
     padding-bottom: 30px;
+  }
+
+  .center-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
