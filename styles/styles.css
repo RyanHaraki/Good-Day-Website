@@ -99,6 +99,8 @@ body {
 
 #submit {
   flex: 0.3;
+  height: 100%;
+  border-radius: 0;
   width: 100%;
   background: black;
   border: none;
