@@ -106,6 +106,8 @@ margin-top: 20px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+  -webkit-appearance: none;
+
 }
 
 #submit:active {
