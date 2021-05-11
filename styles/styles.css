@@ -87,7 +87,7 @@ body {
   border-radius: 8px;
   height: 45px;
   width: 95%;
-margin-top: 20px;
+  margin-top: 20px;
 }
 
 #search {
@@ -107,12 +107,10 @@ margin-top: 20px;
   font-weight: bold;
   cursor: pointer;
   -webkit-appearance: none;
-
 }
 
 #submit:active {
   background: rgb(31, 31, 31);
-
 }
 
 /* FOOTER  */
@@ -146,7 +144,6 @@ p {
 }
 
 .center-small {
-
 }
 
 /* MEDIA QUERIES  */
@@ -178,5 +175,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #search {
+    width: 10%;
   }
 }
