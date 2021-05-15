@@ -1,0 +1,28 @@
+{
+  "name": "good-day-website",
+  "version": "1.0.0",
+  "description": "Website for the Good Day app.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanHaraki/Good-Day-Website.git"
+  },
+  "author": "Good Day",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyanHaraki/Good-Day-Website/issues"
+  },
+  "homepage": "https://github.com/RyanHaraki/Good-Day-Website#readme",
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.41",
+    "body-parser": "^1.19.0",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2"
+  }
+}

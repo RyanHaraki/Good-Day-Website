@@ -90,7 +90,7 @@ body {
   margin-top: 20px;
 }
 
-#search {
+#email {
   flex: 0.7;
   border: none;
   padding: 1em;
@@ -179,7 +179,7 @@ p {
     align-items: center;
   }
 
-  #search {
+  #email {
     width: 10%;
   }
 }
