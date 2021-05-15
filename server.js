@@ -4,10 +4,10 @@ require("dotenv").config();
 const mailchimpFunctions = require("./mailchimp");
 const request = require("request");
 
+// Server setup
 const app = express();
 const port = 3000 || process.env.PORT;
 
-//app.use stuff
 app.use(express.static("public"));
 app.use(bodyParser.json()); // to support JSON-encoded bodies
 app.use(
@@ -17,6 +17,7 @@ app.use(
   })
 );
 
+// Routing
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
