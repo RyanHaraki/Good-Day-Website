@@ -2,9 +2,12 @@ const express = require("express");
 var bodyParser = require("body-parser");
 require("dotenv").config();
 const mailchimpFunctions = require("./mailchimp");
-const request = require("request");
 
-// Server setup
+
+///////////////////////////////////////////
+//              Setup                    //
+///////////////////////////////////////////
+
 const app = express();
 const port = 3000 || process.env.PORT;
 
@@ -17,7 +20,10 @@ app.use(
   })
 );
 
-// Routing
+///////////////////////////////////////////
+//              Routes                   //
+///////////////////////////////////////////
+
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
@@ -34,7 +40,7 @@ app.post("/", (req, res) => {
   const email = req.body.email;
 
   if (email) {
-    // Add user to email lsit
+    // Add user to email list
     mailchimpFunctions.addSubscriber(email);
     res.redirect("/success");
   } else {
@@ -42,6 +48,12 @@ app.post("/", (req, res) => {
     res.redirect("/fail");
   }
 });
+
+//Handle 404 Errors
+app.use((req, res, next) => {
+  res.status(404).send("Page could not be found")
+})
+
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);

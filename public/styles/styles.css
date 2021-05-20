@@ -95,6 +95,7 @@ body {
   border: none;
   padding: 1em;
   font-size: 1rem;
+  border-radius: 8px 0 0 8px;
 }
 
 #submit {
@@ -136,6 +137,16 @@ p {
   font-size: 1.2rem;
 }
 
+a {
+  text-decoration: none;
+  color: #8378FF;
+}
+
+a:hover {
+  color: #7267e9
+}
+
+
 .spacer {
   width: 100%;
   height: 100px;
@@ -145,8 +156,6 @@ p {
   padding: 0 100px;
 }
 
-.center-small {
-}
 
 /* MEDIA QUERIES  */
 
