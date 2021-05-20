@@ -29,11 +29,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/success", (req, res) => {
-  res.sendFile(__dirname + "/success.html");
+  res.sendFile(__dirname + "/pages/success.html");
 });
 
 app.get("/fail", (req, res) => {
-  res.sendFile(__dirname + "/fail.html");
+  res.sendFile(__dirname + "/pages/fail.html");
 });
 
 app.post("/", (req, res) => {
